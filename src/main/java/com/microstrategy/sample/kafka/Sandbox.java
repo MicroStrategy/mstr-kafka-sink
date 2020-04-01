@@ -16,8 +16,9 @@ public class Sandbox {
 		String libraryUrl = "https://xxx.microstrategy.com/MicroStrategyLibrary";
 		String username = "username";
 		String password = "password";
+		String loginMode = "1";
 		
-		MicroStrategy mstr = new MicroStrategy(libraryUrl, username, password);
+		MicroStrategy mstr = new MicroStrategy(libraryUrl, username, password,loginMode);
 		mstr.connect();
 		mstr.setProject("Tutorial Project");
 
